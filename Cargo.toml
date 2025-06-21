@@ -1,0 +1,25 @@
+[package]
+name = "Du_Attalah"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+anyhow = "1.0"
+uuid = { version = "1", features = ["v4"] }
+rand = "0.9.1"
+num-bigint = "0.4.6"
+num-traits = "0.2.19"
+
+[[bin]]
+name = "server"
+path = "src/bin/server.rs"
+
+[[bin]]
+name = "client1"
+path = "src/bin/client1.rs"
+
+[[bin]]
+name = "client2"
+path = "src/bin/client2.rs"
+
